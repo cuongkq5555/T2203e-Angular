@@ -1,5 +1,7 @@
 import {Component, Input} from "@angular/core";
-import {IExam2} from "../interfaces/examangular.interface";
+import {user} from "../interfaces/user.interface";
+import {contact} from "../interfaces/contact.interface";
+import {WeatherService} from "../services/weather.service";
 
 
 @Component({
@@ -7,9 +9,17 @@ import {IExam2} from "../interfaces/examangular.interface";
   templateUrl:"./examangular.component.html"
 })
 export class ExamangularComponent{
-  data : IExam2[] = [
-    {Title: 'Sale Representive 1', HireDate: '10/05/1996', Address: '7 Houndstooth Rd.', City:'London', Phone:'(71) 555-4444'},
-  ];
+  user: user[] = [];
+  contact: contact[] = [];
+  constructor(private weatherService: WeatherService) {
+  }
+  ngOnInit(){
+    this.weatherService.contactList().subscribe(value => {
+      this.user = value.data.user;
+      this.contact = value.data.contact;
+    })
+  }
 }
+
 
 

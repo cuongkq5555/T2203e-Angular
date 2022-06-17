@@ -1,0 +1,60 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "user": [
+      {
+        "name": "Magaret",
+
+      {
+        "name": "Laura",
+      },
+      {
+        "name": "Robert",
+      },
+      {
+        "name": "Albert",
+      },
+      {
+        "name": "Michale  ",
+      }
+    ],
+    "contact": [
+      {
+        "title": "Sale Representative",
+        "hiredate": "10/5/1996",
+        "address": "7 Houndstooth Rd",
+        "city": "London",
+        "phone": "(71)-555-4444"
+      },
+      {
+        "title": "Sale Representative",
+        "hiredate": "10/5/1996",
+        "address": "7 Houndstooth Rd",
+        "city": "London",
+        "phone": "(71)-555-4444"
+      },
+      {
+        "title": "Sale Representative",
+        "hiredate": "10/5/1996",
+        "address": "7 Houndstooth Rd",
+        "city": "London",
+        "phone": "(71)-555-4444"
+      },
+      {
+        "title": "Sale Representative",
+        "hiredate": "10/5/1996",
+        "address": "7 Houndstooth Rd",
+        "city": "London",
+        "phone": "(71)-555-4444"
+      },
+      {
+        "title": "Sale Representative",
+        "hiredate": "10/5/1996",
+        "address": "7 Houndstooth Rd",
+        "city": "London",
+        "phone": "(71)-555-4444"
+      }
+    ]
+  }
+}
