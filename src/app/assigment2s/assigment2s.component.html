@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="row">
+  <div class="khung">
+    <div class="col-md-3">
+      <div class="task0">
+        <h2>To Do</h2>
+      </div>
+      <div class="task" *ngFor="let c of data;let i = index" >
+        <app-assigment2 [table]="data[i]" ></app-assigment2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="task0">
+        <h2>In Progress</h2>
+      </div>
+      <div class="task" *ngFor="let c of data;let i = index" >
+        <app-assigment2 [table]="data[i]" ></app-assigment2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="task0">
+        <h2>In Review</h2>
+      </div>
+      <div class="task" *ngFor="let c of data;let i = index" >
+        <app-assigment2 [table]="data[i]" ></app-assigment2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="task0">
+        <h2>Done</h2>
+      </div>
+      <div class="task" *ngFor="let c of data;let i = index" >
+        <app-assigment2 [table]="data[i]" ></app-assigment2>
+      </div>
+    </div>
+  </div>
+</div>
